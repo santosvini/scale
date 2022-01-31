@@ -42,7 +42,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: npm
-        run: npm test
+      # - name: npm
+       # run: npm test
         env:  
           CI: true
