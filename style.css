@@ -3,41 +3,64 @@ body {
   background: #1139A8;
 }
 
+label,
+input,
+button {
+  display: block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+form {
+  width: 200px;
+  margin: 10px;
+}
+
 table {
-  width: 70%;
+  display: block;
+  position: absolute;
+  right: 30%;
+  top: 5%;
+  width: 300px;
   border-collapse: separate;
   text-align: center;
 }
 
 caption {
+  align-items: center;
+  justify-content: center;
   background-color: #8CBBEE;
   margin: 2px;
   border: 2px double black;
-  line-height: 1.5em;
-  font: bolder 1.5em Consolas, Monaco, monospace;
-  padding: 10px;
+  line-height: 1em;
+  font: bolder 1.2em Consolas, Monaco, monospace;
+  padding: 8px;
 }
 
-td, th {
+thead > tr > th {
+  display: flexbox;
+  flex-wrap: wrap;
   font: bolder 1.2em Consolas, Monaco, monospace;
   border: 2px solid black;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
 }
 
-.dias {
+.data,
+.campus,
+.hour,
+.name {
   background-color: #1BB7F5;
 }
 
-.campus {
-  background-color: #1BB7F5;
-}
-
-.hora {
-  background-color: #0D6CDE;
-}
-
-tbody > tr > td {
-  background-color: #fff;
+tfoot > tr > th {
+  background-color: #8CBBEE;
   margin: 2px;
+  border: 2px double black;
+  line-height: 1em;
+  font: bolder 1.2em Consolas, Monaco, monospace;
+}
+
+button {
+  margin: 30px;
 }

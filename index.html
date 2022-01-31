@@ -8,59 +8,40 @@
   <title>Escalas</title>
 </head>
 <body>
-  <table>
-    <caption> 🖥️ Escala Janeiro ⌨️ </caption>
+  <form action="post">
+    <div class="input-row">
+      <label for="data">Data: </label>
+      <input type="date" name="data" id="date"/>
+    </div>
+    <div class="input-row">
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name"/>
+    </div>
+    <div class="input-row">
+      <label for="campus">Campus: </label>
+      <input type="text" name="campus" id="campus"/>
+    </div>
+    <div class="input-row">
+      <label for="hour">Hora: </label>
+      <input type="time" name="time" id="hour"/>
+    </div>
+  </form>
+  <button>Submit</button>
+  <table id="table">
+    <caption>🖥️Escala⌨️</caption>
     <thead>
       <tr>
-        <th scope="col" rowspan="2" class="dias" id="">Dias</th>
-        <th scope="col" colspan="2" class="campus" id="">Zona Oeste</th>
-        <th scope="col" colspan="2" class="campus" id="">Zona Leste</th>
+        <th class="data">Data</th>
+        <th class="name">Nome</th>
+        <th class="campus">Campus</th>
+        <th class="hour">Hora</th>
       </tr>
-      <tr class="hora">
-        <td>10Hrs</td>
-        <td>18Hrs</td>
-        <td>10Hrs</td>
-        <td>18Hrs</td>
-      </tr>
-    </thead>
-    <tbody>
+    <tbody></tbody>
+   <!--  <tfoot>
       <tr>
-        <th scope="row" class="dias">02/01</th>
-        <td>Vinicius</td>
-        <td>X</td>
-        <td>X</td>
-        <td>Informar</td>
+        <th>Voluntários Multimídia</th>
       </tr>
-      <tr>
-        <th scope="row" class="dias">09/01</th>
-        <td>Viviane</td>
-        <td>Marina</td>
-        <td>Informar</td>
-        <td>Informar</td>
-      </tr>
-      <tr>
-        <th scope="row" class="dias">16/01</th>
-        <td>Vinicius</td>
-        <td>Informar</td>
-        <td>Informar</td>
-        <td>Informar</td>
-      </tr>
-      <tr>
-        <th scope="row" class="dias">23/01</th>
-        <td>Viviane</td>
-        <td>Marina</td>
-        <td>Informar</td>
-        <td>Informar</td>
-      </tr>
-      <tr>
-        <th scope="row" class="dias">30/01</th>
-        <td>Vinicius</td>
-        <td>Thay</td>
-        <td>Informar</td>
-        <td>Informar</td>
-      </tr>
-    </tbody>
+    </tfoot> -->
   </table>
-  <script src="scripts.js"></script>
 </body>
 </html>
